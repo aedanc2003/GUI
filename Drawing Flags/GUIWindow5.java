@@ -15,9 +15,9 @@ public class GUIWindow5{
       panel3.setBackground(Color.red);
       Container pane = theGUI.getContentPane();
       pane.setLayout(new GridLayout(3, 1));
-      pane.add(panel1);
-      pane.add(panel2);
-      pane.add(panel3);
+      pane.add(panel1); //white
+      pane.add(panel2); //blue
+      pane.add(panel3); //red
       theGUI.setVisible(true);
     }
 }
