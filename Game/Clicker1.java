@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
  
-class Clicker1{
+public class Clicker1{
    //Instance variables  for Main class 
  
    private JButton button;
@@ -23,7 +23,7 @@ class Clicker1{
        frame.setLayout(null);
      
         rand = new Random();
-        scoreLabel = new JLabel("Score : " + score);
+        scoreLabel = new JLabel("Score : ");
         button= new JButton("Jump");
       
         button.setBounds(100, 100, 100, 50);
@@ -35,14 +35,14 @@ class Clicker1{
     
               
               //increase the score
-            score += 1; 
+              score++; 
               //show score on the label
-            
+              scoreLabel.setText("Score : " + score);
              
               
               //sets button to random color
-            Color color = new Color(rand.nextInt(255));
-        
+              Color color = new Color(rand.nextInt(255), rand.nextInt(255), rand.nextInt(255));
+              button.setBackground(color);
                //move button to new random location
               button.setLocation(50+ rand.nextInt(600), 50+ rand.nextInt(500));
                        
