@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class GUIWindow5{
+public class flag{
     public static void main(String[] args){
       JFrame theGUI = new JFrame();
       theGUI.setTitle("Russia Flag");
